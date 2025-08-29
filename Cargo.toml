@@ -1,0 +1,30 @@
+[package]
+name = "boost_phoenix"
+description = "Boost C++ library boost_phoenix packaged using Zanbil"
+version = "0.1.0"
+edition = "2024"
+links = "boost_phoenix"
+license = "BSL-1.0"
+repository = "https://github.com/zanbilify/boost_phoenix"
+
+[package.metadata.zanbil]
+make_dependencies_public = true
+
+[dependencies]
+boost_assert = { version = "0.1.0", path = "../boost_assert" }
+boost_bind = { version = "0.1.0", path = "../boost_bind" }
+boost_config = { version = "0.1.0", path = "../boost_config" }
+boost_core = { version = "0.1.0", path = "../boost_core" }
+boost_function = { version = "0.1.0", path = "../boost_function" }
+boost_fusion = { version = "0.1.0", path = "../boost_fusion" }
+boost_mpl = { version = "0.1.0", path = "../boost_mpl" }
+boost_predef = { version = "0.1.0", path = "../boost_predef" }
+boost_preprocessor = { version = "0.1.0", path = "../boost_preprocessor" }
+boost_proto = { version = "0.1.0", path = "../boost_proto" }
+boost_range = { version = "0.1.0", path = "../boost_range" }
+boost_smart_ptr = { version = "0.1.0", path = "../boost_smart_ptr" }
+boost_type_traits = { version = "0.1.0", path = "../boost_type_traits" }
+boost_utility = { version = "0.1.0", path = "../boost_utility" }
+
+[build-dependencies]
+zanbil-boost-build = "0.1.0"
